@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "User standards",
+    "description": "Cross-project user rules (hard constraints, always injected) and memories (soft notes, retrieved on demand), both with global/project scope and gentle save reminders. Manage them in separate tabs under Settings → User standards: “remember X” saves to memory by default; “write to config/rule/from now on/mandatory” saves a rule. The agent detects save intent or repeated corrections in conversation and offers a nudge, with a confirmation step before saving by default.",
+    "detail": "docs/DETAIL.md"
+  }
+}

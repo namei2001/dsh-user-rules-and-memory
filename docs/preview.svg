@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="300" viewBox="0 0 640 300">
+  <defs>
+    <linearGradient id="usBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#161d2a"/>
+      <stop offset="1" stop-color="#0d121b"/>
+    </linearGradient>
+    <linearGradient id="usBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6C9BFF"/>
+      <stop offset="1" stop-color="#3D6FE0"/>
+    </linearGradient>
+    <linearGradient id="usGreen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4FD8A0"/>
+      <stop offset="1" stop-color="#29B27B"/>
+    </linearGradient>
+    <linearGradient id="usPurple" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#A98BFF"/>
+      <stop offset="1" stop-color="#7255D9"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="300" rx="18" fill="url(#usBg)"/>
+
+  <!-- LEFT: rules card (hard constraints, always injected) -->
+  <rect x="40" y="46" width="258" height="176" rx="14" fill="#233049" fill-opacity="0.55" stroke="url(#usBlue)" stroke-width="1.6"/>
+  <rect x="40" y="46" width="258" height="34" rx="14" fill="url(#usBlue)" fill-opacity="0.18"/>
+  <circle cx="62" cy="63" r="6" fill="url(#usGreen)"/>
+  <path d="M59.3 63l1.9 1.9 3.5-3.9" fill="none" stroke="#0d121b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="77" y="59" width="120" height="8" rx="4" fill="#9DB6E8"/>
+  <rect x="58" y="100" width="200" height="7" rx="3.5" fill="#6E82A8"/>
+  <circle cx="270" cy="103" r="8" fill="url(#usGreen)"/>
+  <path d="M266.3 103l2.6 2.6 4.6-5.2" fill="none" stroke="#0d121b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="58" y="126" width="168" height="7" rx="3.5" fill="#6E82A8"/>
+  <circle cx="270" cy="129" r="8" fill="url(#usGreen)"/>
+  <path d="M266.3 129l2.6 2.6 4.6-5.2" fill="none" stroke="#0d121b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="58" y="152" width="182" height="7" rx="3.5" fill="#6E82A8"/>
+  <circle cx="270" cy="155" r="8" fill="url(#usGreen)"/>
+  <path d="M266.3 155l2.6 2.6 4.6-5.2" fill="none" stroke="#0d121b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="58" y="182" width="92" height="7" rx="3.5" fill="#3E4C68"/>
+
+  <!-- RIGHT: memory card (soft notes, retrieved on demand) -->
+  <rect x="342" y="46" width="258" height="176" rx="14" fill="#2C2647" fill-opacity="0.55" stroke="url(#usPurple)" stroke-width="1.6"/>
+  <rect x="342" y="46" width="258" height="34" rx="14" fill="url(#usPurple)" fill-opacity="0.18"/>
+  <circle cx="364" cy="63" r="6" fill="none" stroke="#C7B8FF" stroke-width="2"/>
+  <path d="M368.4 67.4l4.2 4.2" stroke="#C7B8FF" stroke-width="2" stroke-linecap="round"/>
+  <rect x="379" y="59" width="132" height="8" rx="4" fill="#C7B8FF"/>
+  <rect x="360" y="100" width="196" height="7" rx="3.5" fill="#887FB8"/>
+  <rect x="360" y="126" width="150" height="7" rx="3.5" fill="#887FB8"/>
+  <rect x="360" y="152" width="176" height="7" rx="3.5" fill="#887FB8"/>
+  <rect x="360" y="182" width="104" height="7" rx="3.5" fill="#4B4668"/>
+
+  <!-- BOTTOM: scope chips — global (globe) + project (folder) -->
+  <g transform="translate(40,244)">
+    <rect x="0" y="0" width="150" height="34" rx="17" fill="#1B2740" stroke="url(#usBlue)" stroke-width="1.4"/>
+    <circle cx="24" cy="17" r="9" fill="none" stroke="url(#usBlue)" stroke-width="1.8"/>
+    <path d="M15 17h18M24 8c5 5 5 13 0 18M24 8c-5 5-5 13 0 18" fill="none" stroke="url(#usBlue)" stroke-width="1.4"/>
+    <rect x="44" y="13" width="82" height="8" rx="4" fill="#7E9AD2"/>
+  </g>
+  <g transform="translate(204,244)">
+    <rect x="0" y="0" width="150" height="34" rx="17" fill="#1B2740" stroke="url(#usBlue)" stroke-width="1.4"/>
+    <path d="M12 12h11l3 3h10v10a2 2 0 0 1-2 2H12a2 2 0 0 1-2-2V14a2 2 0 0 1 2-2z" fill="none" stroke="url(#usBlue)" stroke-width="1.8" stroke-linejoin="round"/>
+    <rect x="44" y="13" width="82" height="8" rx="4" fill="#7E9AD2"/>
+  </g>
+  <g transform="translate(368,244)">
+    <rect x="0" y="0" width="232" height="34" rx="17" fill="#1E2A1F" stroke="url(#usGreen)" stroke-width="1.4"/>
+    <circle cx="22" cy="17" r="8" fill="url(#usGreen)"/>
+    <path d="M18.5 17l2.5 2.5 4.5-5" fill="none" stroke="#0d121b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="42" y="13" width="166" height="8" rx="4" fill="#7BCBA6"/>
+  </g>
+</svg>
