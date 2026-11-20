@@ -1,4 +1,4 @@
-# @local/dsh-user-standards
+# @local/dsh-user-rules-and-memory
 
 跨项目的用户习惯与规则插件，用于 [DeepSeek Harness](http://127.0.0.1:61098)（DSH 0.2.2-rc.3+）。
 
