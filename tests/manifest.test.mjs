@@ -43,7 +43,7 @@ test('locales: meta.title present, detail is an existing .md path, strings align
     loc[lang] = JSON.parse(read(`locale/${lang}.json`))
     assert.ok(loc[lang].meta.title, `${lang}: no meta.title`)
     const detail = loc[lang].meta.detail
-    assert.match(detail, /\.markdown?$/i, `${lang}: meta.detail is not a .md path`)
+    assert.match(detail, /\.(md|markdown)$/i, `${lang}: meta.detail is not a .md path`)
     assert.ok(existsSync(join(root, detail)), `${lang}: detail file missing: ${detail}`)
     assert.ok(statSync(join(root, detail)).size < 1024 * 1024, `${lang}: detail file > 1 MiB`)
   }
