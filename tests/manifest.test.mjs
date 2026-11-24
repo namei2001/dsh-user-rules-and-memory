@@ -23,7 +23,7 @@ test('package.json bundle identity', () => {
 
 test('exports and files list every runtime asset', () => {
   for (const key of ['.', './client', './icon']) assert.ok(pkg.exports[key], `missing export ${key}`)
-  for (const f of ['index.js', 'client.js', 'cordis.patch.yml', 'icon.svg', 'README.md', 'docs']) {
+  for (const f of ['index.js', 'client.js', 'cordis.patch.yml', 'icon.svg', 'README.md', 'README.zh.md', 'docs']) {
     assert.ok(pkg.files.includes(f), `files missing ${f}`)
   }
   assert.ok(pkg.exports['./locale/*.json'], 'missing locale export')
@@ -83,4 +83,14 @@ test('Client half uses the ModuleLoader and theme tokens, no Harness client impo
   assert.match(src, /window\.__ModuleLoader__\.load/)
   assert.match(src, /--dsw-alias-brand-primary/)
   assert.doesNotMatch(src, /require\(['"]@deepseek-ai\/dsh-client-/)
+})
+
+test('bilingual README: English primary, Chinese as README.zh.md, no stale README.en.md', () => {
+  const en = read('README.md')
+  const zh = read('README.zh.md')
+  assert.ok(!existsSync(join(root, 'README.en.md')), 'stale README.en.md still present')
+  assert.match(en, /\(README\.zh\.md\)/, 'English README missing link to Chinese')
+  assert.match(zh, /\(README\.md\)/, 'Chinese README missing link back to English')
+  assert.match(en, /How rules and memories reach the agent|rules are hard constraints/i, 'English README lacks primary framing')
+  assert.match(zh, /用户习惯与规则/, 'Chinese README title missing')
 })
