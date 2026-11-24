@@ -8,7 +8,7 @@
 
 **规则是强约束，每次会话都注入；记忆是软参考，只注入索引、按需检索。两者都可以是全局（所有项目）或项目专属。**
 
-![功能预览：左侧规则卡片、右侧记忆卡片、底部作用域标签](docs/preview.svg)
+![功能预览：左侧规则卡片、右侧记忆卡片、底部作用域标签](docs/preview.svg?v=3)
 
 ---
 
@@ -105,7 +105,7 @@ dsh-user-standards/
 ├── docs/
 │   ├── DETAIL.md               # 插件详情页（英文，单图）
 │   ├── DETAIL.zh.md            # 插件详情页（中文，单图）
-│   └── preview.svg             # 功能预览图（640×300）
+│   └── preview.svg             # 功能预览图（760×400）
 ├── scripts/healthcheck.mjs     # 清单 / 本地化 / 文档 + 在线 /state 健康检查
 ├── tests/manifest.test.mjs     # 无需运行 Harness 的静态测试
 ├── .env.example                # 环境变量模板（无真实密钥）

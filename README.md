@@ -8,7 +8,7 @@ A cross-project user-standards plugin for [the agent runtime](http://127.0.0.1:5
 
 **Rules are hard constraints, injected every session. Memories are soft notes — only an index is injected, and the full text is retrieved on demand. Both can be global (all projects) or project-scoped.**
 
-![Rules are always injected; memories inject only an index and are fetched on demand via recall](docs/preview.svg)
+![Rules are always injected; memories inject only an index and are fetched on demand via recall](docs/preview.svg?v=3)
 
 ---
 
@@ -105,7 +105,7 @@ dsh-user-standards/
 ├── docs/
 │   ├── DETAIL.md               # Plugin detail page (English, single image)
 │   ├── DETAIL.zh.md            # Plugin detail page (Chinese, single image)
-│   └── preview.svg             # Feature diagram (640×300)
+│   └── preview.svg             # Feature diagram (760×400)
 ├── scripts/healthcheck.mjs     # Manifest / locale / docs + live /state health check
 ├── tests/manifest.test.mjs     # Static tests, no running Harness required
 ├── .env.example                # Env var template (no real secrets)
